@@ -1,0 +1,8 @@
+// миксины(функции)
+
+@mixin flex($position) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: $position;
+}

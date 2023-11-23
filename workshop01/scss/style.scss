@@ -1,0 +1,39 @@
+@import './scripts/vars';
+@import './scripts/mixins';
+@import './scripts/parents';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: $widthSite;
+}
+
+.title {
+    &__end {
+        color: $colorText;
+    }
+}
+
+.nav {
+    display: flex;
+    gap: $flexGap;
+
+    &__link {
+        text-decoration: none;
+        @extend %font;
+    }
+}
+
+.content {
+    @include flex(center);
+    gap: $flexGap;
+
+    &__item {
+        width: calc($widthSite / 4);
+        height: 200px;
+        border: $borderItem;
+    }
+}
