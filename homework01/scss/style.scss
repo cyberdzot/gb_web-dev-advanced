@@ -1,0 +1,334 @@
+@import './scripts/vars';
+@import './scripts/global';
+@import './scripts/mixins';
+@import './scripts/fa_icons';
+@import './scripts/swiper';
+
+.header {
+	height: 75px;
+	background-color: $colorDark;
+	@include flex-between-center();
+
+	&__left {
+		@include flex-between-center();
+	}
+
+	&__logo {
+		width: 44px;
+		margin-right: 41px;
+	}
+}
+
+.menu__list {
+	list-style-type: none;
+	display: flex;
+	gap: 41px;
+}
+
+.menu__item:hover .mobile-menu {
+	display: block;
+}
+
+.mobile-menu {
+	position: absolute;
+	top: 52px;
+	right: 187px;
+	background: $colorWhite;
+	box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+	padding: 32px;
+	display: none;
+	z-index: 10;
+
+	&__item {
+		margin-bottom: 20px;
+	}
+
+	&__heading {
+		@include font-size-weight(14px, 700);
+		color: $colorBlack;
+		margin-bottom: 24px;
+	}
+
+	&__title {
+		display: block;
+		color: $colorSelect;
+		@include font-size-weight(14px, 400);
+		margin-bottom: 12px;
+	}
+
+	&__link {
+		display: block;
+		color: #6f6e6e;
+		@include font-size-weight(14px, 400);
+		padding: 13px;
+	}
+}
+
+.top {
+	background-color: #f8f3f4;
+	@include flex-between-center();
+	@include padding-top-bottom(60px);
+
+	&__heading {
+		color: $colorSelect;
+		@include font-size-weight(24px, 400);
+	}
+
+	&__breadcrums {
+		display: flex;
+		gap: 5px;
+	}
+
+	&__breadcrums-link {
+		color: #636363;
+		@include font-size-weight(14px, 300);
+	}
+
+	&__breadcrums-link_colored {
+		color: $colorSelect;
+	}
+}
+
+.swiper-card {
+	position: absolute;
+	top: 922px;
+	left: $siteCenter;
+	z-index: 100;
+	background-color: $colorWhite;
+	border: 1px solid #eaeaea;
+	max-width: $siteWidth;
+	@include flex-column-center();
+	@include padding-top-bottom(64px);
+
+	&__description {
+		@include flex-column-center();
+		margin-bottom: 65px;
+	}
+
+	&__subtitle {
+		@include font-size-weight(14px, 300);
+		color: $colorSelect;
+		margin-bottom: 12px;
+	}
+
+	&__line {
+		width: 63px;
+		height: 3px;
+		background-color: $colorSelect;
+		border: none;
+		margin-bottom: 12px;
+	}
+
+	&__title {
+		color: #4d4d4d;
+		@include font-size-weight(18px, 300);
+		margin-bottom: 48px;
+	}
+
+	&__text {
+		color: #5e5e5e;
+		text-align: center;
+		@include font-size-weight(14px, 300);
+		margin-bottom: 32px;
+	}
+
+	&__price {
+		color: #ef5b70;
+		@include font-size-weight(24px, 300);
+	}
+
+	&__choose {
+		border-top: 1px solid #eaeaea;
+		display: flex;
+		justify-content: center;
+		gap: 42px;
+		padding: 65px;
+	}
+
+	&__choose-heading {
+		color: #6f6e6e;
+		@include font-size-weight(14px, 400);
+	}
+
+	&__add-link {
+		color: $colorButtonCart;
+		@include font-size-weight(16px, 400);
+		border: 1px solid $colorSelect;
+		padding: 1rem 2rem;
+		display: flex;
+		align-items: center;
+	}
+
+	&__cart {
+		color: $colorButtonCart;
+		font-size: 16px;
+		margin-right: 11px;
+	}
+}
+
+.product {
+	margin-bottom: 128px;
+
+	&__title {
+		color: $colorDark;
+		@include font-size-weight(30px, 400);
+		text-align: center;
+		margin-bottom: 6px;
+	}
+
+	&__subtitle {
+		color: #9f9f9f;
+		@include font-size-weight(14px, 400);
+		text-align: center;
+		margin-bottom: 48px;
+	}
+
+	&__box {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 30px;
+		margin-bottom: 48px;
+	}
+
+	&__item {
+		max-width: 30%;
+		background-color: #f8f8f8;
+		position: relative;
+		@include flex-column-center();
+	}
+
+	&__item:hover &__img {
+		filter: brightness(30%);
+	}
+
+	&__item:hover &__add-link {
+		position: absolute;
+		top: 180px;
+		display: flex;
+		align-self: center;
+		align-items: center;
+	}
+
+	&__img {
+		max-width: 100%;
+		margin-bottom: 24px;
+	}
+
+	&__description {
+		@include padding-left-right(16px, 28px);
+		padding-bottom: 20px;
+	}
+
+	&__heading {
+		color: $colorBlack;
+		@include font-size-weight(13px, 400);
+		margin-bottom: 12px;
+	}
+
+	&__text {
+		color: #5d5d5d;
+		@include font-size-weight(14px, 300);
+		margin-bottom: 18px;
+	}
+
+	&__price {
+		color: $colorSelect;
+		@include font-size-weight(16px, 400);
+	}
+
+	&__add-link {
+		color: $colorWhite;
+		@include font-size-weight(14px, 400);
+		padding: 1rem 2rem;
+		border: $colorWhite 1px solid;
+		display: none;
+	}
+
+	&__cart {
+		margin-right: 11px;
+	}
+}
+
+.subscribe {
+	@include padding-top-bottom(97px, 156px);
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url("../img/back_subscribe.jpg");
+
+	&__left {
+		@include flex-column-center();
+		gap: 30px;
+		max-width: 35%;
+	}
+
+	&__text {
+		color: $colorDark;
+		text-align: center;
+		@include font-size-weight(20px, 400);
+	}
+
+	&__text_italic {
+		font-style: italic;
+	}
+
+	&__right {
+		margin-top: 43px;
+	}
+
+	&__title {
+		color: $colorDark;
+		text-align: center;
+		@include font-size-weight(24px, 700);
+		margin-bottom: 32px;
+	}
+
+	&__subtitle {
+		@include font-size-weight(18px, 400);
+	}
+
+	&__form {
+		display: flex;
+	}
+
+	&__email {
+		width: 257px;
+		color: $colorDark;
+		opacity: 0.671;
+		@include font-size-weight(14px, 400);
+		background-color: #e1e1e1;
+		@include padding-left-right(22px, 10px);
+		border: none;
+		border-radius: 23px 0 0 23px;
+	}
+
+	&__button {
+		color: $colorWhite;
+		text-align: center;
+		@include font-size-weight(14px, 400);
+		background-color: $colorSelect;
+		padding: 1rem;
+		border: none;
+		border-radius: 0 23px 23px 0;
+	}
+}
+
+.footer {
+	background-color: $colorDark;
+	@include padding-top-bottom(24px);
+	@include flex-between-center();
+
+	&__rights {
+		color: #fbfbfb;
+		@include font-size-weight(16px, 400);
+	}
+
+	&__socials {
+		font-size: 32px;
+	}
+}
+
+/*# sourceMappingURL=style.css.map */
