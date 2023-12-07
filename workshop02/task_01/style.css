@@ -1,0 +1,15 @@
+.title::web-details-marker {
+	display: none;
+}
+
+.title {
+	display: block;
+}
+.title::after {
+	content: '\2192';
+	padding-left: 5px;
+}
+
+.details[open] .title::after {
+	content: '\2193';
+}
