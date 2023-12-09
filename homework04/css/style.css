@@ -202,24 +202,18 @@ summary::-webkit-details-marker {
 .registration__form-title {
   color: #222;
   font-size: 16px;
-  font-style: normal;
   font-weight: 300;
-  line-height: normal;
 }
 .registration__form-input {
   font-size: 13px;
-  font-style: normal;
   font-weight: 300;
-  line-height: normal;
   padding: 15px 10px;
   max-width: 360px;
 }
 .registration__form-text {
   color: #b1b1b1;
   font-size: 13px;
-  font-style: normal;
   font-weight: 300;
-  line-height: normal;
   max-width: 359px;
 }
 .registration__radio-btns {
@@ -229,24 +223,29 @@ summary::-webkit-details-marker {
 .registration__button {
   color: #fff;
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
-  background-color: #f16d7f;
+  background-color: #EF5B70;
   padding: 1rem 2rem;
-  border: none;
+  border: #EF5B70 1px solid;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 167px;
   margin-top: 39px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.registration__button:hover {
+  color: #EF5B70;
+  background-color: #fff;
+}
+.registration__button:hover path {
+  fill: #EF5B70;
 }
 .registration__info-title {
   color: #000;
   font-size: 24px;
-  font-style: normal;
   font-weight: 300;
-  line-height: normal;
 }
 .registration__info {
   display: flex;
@@ -257,17 +256,13 @@ summary::-webkit-details-marker {
 .registration__info-text {
   color: #000;
   font-size: 24px;
-  font-style: normal;
   font-weight: 300;
-  line-height: normal;
 }
 .registration__info-list {
   list-style-type: "✓";
   color: #000;
   font-size: 24px;
-  font-style: normal;
   font-weight: 300;
-  line-height: normal;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -329,7 +324,7 @@ summary::-webkit-details-marker {
   color: #6f6e6e;
 }
 .cart__price {
-  color: #f16d7f;
+  color: #EF5B70;
 }
 .cart__quantity {
   color: #656565;
@@ -357,10 +352,12 @@ summary::-webkit-details-marker {
   border: 1px solid #a4a4a4;
   background: #fff;
   cursor: pointer;
+  transition: all 0.3s;
 }
 .cart__content-button:hover {
   color: #fff;
-  background-color: #f16d7f;
+  border-color: #EF5B70;
+  background-color: #EF5B70;
 }
 .cart__order {
   width: 30%;
@@ -393,6 +390,12 @@ summary::-webkit-details-marker {
   border: 1px solid #a4a4a4;
   background: #fff;
   cursor: pointer;
+  transition: all 0.3s;
+}
+.cart__form-button:hover {
+  color: #fff;
+  border-color: #222;
+  background-color: #222;
 }
 .cart__total-box {
   background-color: #f5f3f3;
@@ -418,7 +421,7 @@ summary::-webkit-details-marker {
   padding-right: 34px;
 }
 .cart__total_color {
-  color: #f16d7f;
+  color: #EF5B70;
   font-weight: 700;
 }
 .cart__price {
@@ -435,11 +438,19 @@ summary::-webkit-details-marker {
   color: #fff;
   font-size: 16px;
   font-weight: 300;
-  background-color: #f16d7f;
+  background-color: #EF5B70;
   padding: 1rem 2rem;
-  border: none;
+  border: #EF5B70 1px solid;
   margin-bottom: 42px;
   cursor: pointer;
+  transition: all 0.3s;
+}
+.cart__total-button:hover {
+  color: #EF5B70;
+  background-color: #fff;
+}
+.cart__total-button:hover path {
+  fill: #EF5B70;
 }
 
 .filter-sort {

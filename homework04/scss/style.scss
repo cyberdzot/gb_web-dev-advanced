@@ -29,7 +29,6 @@
 	}
 }
 
-
 #burger {
 	position: absolute;
 	left: -999999px;
@@ -117,7 +116,6 @@
 	}
 }
 
-
 .registration {
 	display: flex;
 	justify-content: space-between;
@@ -129,79 +127,77 @@
 		flex-direction: column;
 		gap: 20px;
 	}
+
 	&__form-title {
-		color: #222;
-		font-size: 16px;
-		font-style: normal;
-		font-weight: 300;
-		line-height: normal;
+		color: $colorDark;
+		@include font-size-weight(16px, 300);
 	}
+
 	&__form-input {
-		font-size: 13px;
-		font-style: normal;
-		font-weight: 300;
-		line-height: normal;
+		@include font-size-weight(13px, 300);
 		padding: 15px 10px;
 		max-width: 360px;
 	}
+
 	&__form-text {
 		color: #b1b1b1;
-		font-size: 13px;
-		font-style: normal;
-		font-weight: 300;
-		line-height: normal;
+		@include font-size-weight(13px, 300);
 		max-width: 359px;
 	}
+
 	&__radio-btns {
 		padding-top: 33px;
 		padding-bottom: 35px;
 	}
+
 	&__button {
-		color: #fff;
-		font-size: 14px;
-		font-style: normal;
-		font-weight: 400;
-		line-height: normal;
-		background-color: #f16d7f;
+		color: $colorWhite;
+		@include font-size-weight(14px, 400);
+		background-color: $colorSelect;
 		padding: 1rem 2rem;
-		border: none;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
+		border: $colorSelect 1px solid;
+		@include flex-between-center();
 		width: 167px;
 		margin-top: 39px;
+		cursor: pointer;
+		transition: all 0.3s;
 	}
+
+	&__button:hover {
+		color: $colorSelect;
+		background-color: $colorWhite;
+	}
+
+	&__button:hover path {
+		fill: $colorSelect;
+	}
+
 	&__info-title {
-		color: #000;
-		font-size: 24px;
-		font-style: normal;
-		font-weight: 300;
-		line-height: normal;
+		color: $colorBlack;
+		@include font-size-weight(24px, 300);
 	}
+
 	&__info {
 		display: flex;
 		flex-direction: column;
 		gap: 22px;
 		max-width: 652px;
 	}
+
 	&__info-text {
-		color: #000;
-		font-size: 24px;
-		font-style: normal;
-		font-weight: 300;
-		line-height: normal;
+		color: $colorBlack;
+		@include font-size-weight(24px, 300);
 	}
+
 	&__info-list {
 		list-style-type: "✓";
-		color: #000;
-		font-size: 24px;
-		font-style: normal;
-		font-weight: 300;
-		line-height: normal;
+		color: $colorBlack;
+		@include font-size-weight(24px, 300);
 		display: flex;
 		flex-direction: column;
 		gap: 16px;
 	}
+
 	&__list-item {
 		margin-left: 22px;
 		padding-left: 23px;
@@ -265,7 +261,7 @@
 	}
 
 	&__price {
-		color: #f16d7f;
+		color: $colorSelect;
 	}
 
 	&__quantity {
@@ -296,11 +292,13 @@
 		border: 1px solid #a4a4a4;
 		background: $colorWhite;
 		cursor: pointer;
+		transition: all 0.3s;
 	}
 
 	&__content-button:hover {
 		color: $colorWhite;
-		background-color: #f16d7f;
+		border-color: $colorSelect;
+		background-color: $colorSelect;
 	}
 
 	&__order {
@@ -312,7 +310,6 @@
 		display: flex;
 		flex-direction: column;
 		gap: 20px;
-		// margin-bottom: 23px;
 		margin-bottom: 57px;
 	}
 
@@ -336,6 +333,13 @@
 		border: 1px solid #a4a4a4;
 		background: $colorWhite;
 		cursor: pointer;
+		transition: all 0.3s;
+	}
+
+	&__form-button:hover {
+		color: $colorWhite;
+		border-color: $colorDark;
+		background-color: $colorDark;
 	}
 
 	&__total-box {
@@ -361,7 +365,7 @@
 	}
 
 	&__total_color {
-		color: #f16d7f;
+		color: $colorSelect;
 		font-weight: 700;
 	}
 
@@ -380,11 +384,21 @@
 	&__total-button {
 		color: $colorWhite;
 		@include font-size-weight(16px, 300);
-		background-color: #f16d7f;
+		background-color: $colorSelect;
 		padding: 1rem 2rem;
-		border: none;
+		border: $colorSelect 1px solid;
 		margin-bottom: 42px;
 		cursor: pointer;
+		transition: all 0.3s;
+	}
+
+	&__total-button:hover {
+		color: $colorSelect;
+		background-color: $colorWhite;
+	}
+
+	&__total-button:hover path {
+		fill: $colorSelect;
 	}
 }
 
