@@ -1,0 +1,164 @@
+// до 1024px
+@media (max-width: 1024px) {
+	.center {
+		padding-left: $siteCenterTablet;
+		padding-right: $siteCenterTablet;
+	}
+
+	.header {
+		&__left {
+			padding-left: 16px;
+		}
+
+		&__right {
+			padding-right: 16px;
+		}
+	}
+
+	.main {
+		max-height: 369.048px;
+		grid-template-columns: repeat(2, 384px);
+		margin-bottom: 20px;
+
+		&__img {
+			max-width: 384.786px;
+			max-height: 369.048px;
+		}
+
+		&__line {
+			margin-left: 40px;
+			max-width: 328px;
+		}
+
+		&__title {
+			font-size: 44px;
+		}
+
+		&__subtitle {
+			font-size: 24px;
+		}
+	}
+
+	.product-info {
+		top: 0px;
+		padding: 65px 63.5px;
+		margin-bottom: 129px;
+	}
+
+	.sort {
+		left: 440px;
+	}
+
+	.product {
+		margin-bottom: 40.5px;
+
+		&__subtitle {
+			margin-bottom: 73px;
+		}
+
+		&__box {
+			margin-bottom: 32px;
+		}
+	}
+
+	.cart {
+		flex-direction: column;
+		align-items: center;
+
+		&__content-button-box {
+			display: flex;
+			justify-content: center;
+			gap: 48px;
+		}
+
+		&__content-list {
+			margin-bottom: 62px;
+		}
+
+		&__order {
+			width: auto;
+			display: flex;
+			gap: 15px;
+			margin-top: 64px;
+		}
+
+		&__form {
+			width: 360px;
+			margin-bottom: 0;
+		}
+
+		&__total-box {
+			width: 360px;
+			height: 214px;
+			margin-top: 38px;
+		}
+	}
+
+	.registration {
+		justify-content: center;
+		margin-top: 40px;
+		gap: 22px;
+
+		&__form {
+			max-width: 355px;
+		}
+
+		&__info {
+			max-width: 365px;
+		}
+
+		&__info-title {
+			font-size: 16px;
+		}
+
+		&__info-text {
+			font-size: 16px;
+		}
+		&__list-item{
+			font-size: 16px;
+		}
+	}
+
+	.offer {
+		margin-left: 16px;
+		margin-right: 16px;
+		margin-bottom: 155px;
+	}
+
+	.feature {
+		flex-direction: column;
+		align-items: center;
+		gap: 48px;
+		padding-top: 48px;
+		padding-bottom: 64px;
+
+		&__text {
+			max-width: 360px;
+		}
+	}
+
+	.pagination {
+		margin-bottom: 63.5px;
+	}
+
+	.subscribe {
+		align-items: center;
+		flex-direction: column;
+		gap: 48px;
+		@include padding-top-bottom(64px, 140px);
+
+		&__title {
+			margin-bottom: 27px;
+		}
+	}
+
+	.footer {
+		&__rights {
+			padding-left: 32px;
+		}
+
+		&__socials {
+			padding-right: 32px;
+		}
+	}
+}
