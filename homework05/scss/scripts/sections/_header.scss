@@ -1,0 +1,44 @@
+.header {
+	height: 74px;
+	background-color: $colorDark;
+	@include flex-between-center();
+
+	&__left {
+		@include flex-between-center();
+		padding-left: 7px;
+	}
+
+	&__logo {
+		width: 44px;
+		margin-right: 41px;
+	}
+
+	&__right {
+		display: flex;
+		gap: 41px;
+		padding-right: 6px;
+	}
+
+	&__cart-count {
+
+		position: relative;
+	}
+
+	&__cart-count::after {
+		content: '4';
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 14px;
+		color: $colorWhite;
+		background-color: $colorSelect;
+		position: absolute;
+		top: -10px;
+		right: -9px;
+		width: 19px;
+		height: 19px;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}

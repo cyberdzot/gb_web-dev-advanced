@@ -1,0 +1,16 @@
+.footer {
+	background-color: $colorDark;
+	@include padding-top-bottom(24px);
+	@include flex-between-center();
+
+	&__rights {
+		color: #fbfbfb;
+		@include font-size-weight(16px, 400);
+		padding-left: 5px;
+	}
+
+	&__socials {
+		font-size: 32px;
+		padding-right: 5px;
+	}
+}

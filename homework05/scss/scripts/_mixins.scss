@@ -1,0 +1,32 @@
+@mixin flex-between-center() {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@mixin flex-column-center() {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+@mixin flex-column-gap($gap) {
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+}
+
+@mixin padding-top-bottom($top, $bottom: $top) {
+	padding-top: $top;
+	padding-bottom: $bottom;
+}
+
+@mixin padding-left-right($left, $right: $left) {
+	padding-left: $left;
+	padding-right: $right;
+}
+
+@mixin font-size-weight($size, $weight) {
+	font-size: $size;
+	font-weight: $weight;
+}
