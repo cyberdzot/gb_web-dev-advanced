@@ -1,0 +1,28 @@
+.fa {
+	color: $colorWhite;
+	transition: color .3s;
+}
+
+.fa-magnifying-glass {
+	font-size: 28px;
+}
+
+.fa-bars {
+	font-size: 28px;
+	cursor: pointer;
+}
+
+.fa-user {
+	font-size: 28px;
+}
+
+.fa-cart-shopping {
+	font-size: 28px;
+}
+
+.fa-magnifying-glass:hover,
+.fa-bars:hover,
+.fa-user:hover,
+.fa-cart-shopping:hover {
+	color: $colorSelect;
+}

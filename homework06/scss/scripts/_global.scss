@@ -1,0 +1,42 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	outline: none;
+}
+
+body {
+	font-family: "Lato", sans-serif;
+	font-style: normal;
+	line-height: normal;
+}
+
+.fix-overflow-x {
+	overflow-x: hidden;
+	position: relative;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	transition: all .3s;
+}
+
+a:hover {
+	color: $colorSelect;
+}
+
+a:hover .fa-brands {
+	color: $colorSelect;
+}
+
+summary {
+	display: block;
+}
+
+summary::-webkit-details-marker {
+	display: none;
+}

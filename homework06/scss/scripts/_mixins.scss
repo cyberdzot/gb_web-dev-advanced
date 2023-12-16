@@ -1,0 +1,58 @@
+//  @include flex-between-center();
+@mixin flex-between-center() {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+// @include flex-column-center();
+@mixin flex-column-center() {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+// @include flex-column-gap($gap);
+@mixin flex-column-gap($gap) {
+	display: flex;
+	flex-direction: column;
+	gap: $gap;
+}
+
+// @include flex-center-gap($gap);
+@mixin flex-center-gap($gap) {
+	display: flex;
+	align-items: center;
+	gap: $gap;
+}
+
+// @include flex-center-lvl2();
+@mixin flex-center-lvl2() {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+// @include padding-top-bottom($top, $bottom: $top);
+@mixin padding-top-bottom($top, $bottom: $top) {
+	padding-top: $top;
+	padding-bottom: $bottom;
+}
+
+// @include padding-left-right($left, $right: $left);
+@mixin padding-left-right($left, $right: $left) {
+	padding-left: $left;
+	padding-right: $right;
+}
+
+// @include margin-top-bottom($top, $bottom: $top);
+@mixin margin-top-bottom($top, $bottom: $top) {
+	margin-top: $top;
+	margin-bottom: $bottom;
+}
+
+// @include font-size-weight($size, $weight);
+@mixin font-size-weight($size, $weight) {
+	font-size: $size;
+	font-weight: $weight;
+}
